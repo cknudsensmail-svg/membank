@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "841ca05b-ef3d-45e0-8f85-fbfed2087ddc",
+		"name": "membank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "933248"
+	},
+	"item": [
+		{
+			"name": "list",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "fb568f8a-293f-4955-9bef-9d312cb6db72",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-auth-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/list",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createaccount",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "fb568f8a-293f-4955-9bef-9d312cb6db72",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-auth-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userSecret\": \"B_!*57597\",\r\n    \"regNo\": 1234,\r\n    \"accountNo\": 1235,\r\n    \"balance\": 12.02,\r\n    \"fullAccountNo\": \"12340000001235\",\r\n    \"iban\": \"sjdofsi2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/createaccount",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"createaccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createaccount2",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "fb568f8a-293f-4955-9bef-9d312cb6db72",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-auth-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userSecret\": \"B_!*57596\",\r\n    \"regNo\": 1234,\r\n    \"accountNo\": 1236,\r\n    \"balance\": 12.02,\r\n    \"fullAccountNo\": \"12340000001236\",\r\n    \"iban\": \"sjdofsi3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/createaccount",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"createaccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transfer",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "fb568f8a-293f-4955-9bef-9d312cb6db72",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-auth-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userSecret\": \"B_!*57597\",\r\n    \"fromAccountNo\": \"12340000001235\",\r\n    \"toAccountNo\": \"12340000001236\",\r\n    \"valueDate\": \"2025-11-16T15:40:15.203+00:00\",\r\n    \"amount\": 10.2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/transfer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

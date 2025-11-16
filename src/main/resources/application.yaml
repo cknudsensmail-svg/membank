@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: account-api-demo
+access:
+  token: fb568f8a-293f-4955-9bef-9d312cb6db72
