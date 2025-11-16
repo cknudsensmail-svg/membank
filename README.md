@@ -7,9 +7,12 @@ https://github.com/cknudsensmail-svg/membank.git
 
 The api contains a simplified account service exposed as a restservice:
 
-create: Create an account
-list: List all accounts in membank
-transfer: Transfer amount between accounts in membank
+##create: 
+Create an account
+##list: 
+List all accounts in membank
+##transfer: 
+Transfer amount between accounts in membank
 
 The membank at current has no actual persistency, so be aware of the fact that you could loose your money as fast as betting on horses.
 
@@ -18,7 +21,7 @@ http://localhost:8080/actuator/health
 
 Security:
 x-auth-token header grants access to the api
-account secretToken needed to verify outgoing transafers
+account secretToken needed to verify outgoing transfers
 
 
 Postman collection added, see:
