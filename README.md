@@ -19,11 +19,12 @@ The membank at current has no actual persistency, so be aware of the fact that y
 Health monitoring at current monitors the heap mem using Spring Boot Custom HealthIndicator, see
 http://localhost:8080/actuator/health
 
-Security:
+## Security:
 x-auth-token header grants access to the api
+
 account secretToken needed to verify outgoing transfers
 
-
+## postman collection
 Postman collection added, see:
 src/postman/membank.postman_collection.json
 
