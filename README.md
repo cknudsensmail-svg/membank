@@ -7,11 +7,11 @@ https://github.com/cknudsensmail-svg/membank.git
 
 The api contains a simplified account service exposed as a restservice:
 
-##create: 
+## create: 
 Create an account
-##list: 
+## list: 
 List all accounts in membank
-##transfer: 
+## transfer: 
 Transfer amount between accounts in membank
 
 The membank at current has no actual persistency, so be aware of the fact that you could loose your money as fast as betting on horses.
