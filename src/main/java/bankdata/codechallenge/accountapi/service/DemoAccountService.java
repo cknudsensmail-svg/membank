@@ -13,7 +13,7 @@ import bankdata.codechallenge.accountapi.model.Account;
 import bankdata.codechallenge.accountapi.model.PiggyBankAccountAPITransfer;
 
 /**
- * This AccountService implementation 
+ * This AccountService implementation
  * Make sure to annotate @ Transactional if adding persistency
  */
 @Service
